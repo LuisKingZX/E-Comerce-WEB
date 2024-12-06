@@ -1,0 +1,71 @@
+
+
+.Container {
+    
+    position: fixed;
+    grid-template-columns: 400px 400px;
+    
+    
+    margin-top: 120px;
+    margin-left: 200px;
+}
+
+.Sidebar {
+    background-color: #f0f0f0;
+    width: 200px;
+}
+
+.sidebar ul {
+    padding: 20px 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.Main-Content {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    column-gap: 100px;
+    padding: 20px;
+}
+
+.Large-Box {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    text-align: center;
+}
+ul{
+
+    margin-block-start: 0;
+    padding-inline-start: 15px;
+}
+
+.Profile {
+    position: fixed;
+    margin-top: 120px;
+    right: 0;
+
+    text-align: left;
+    padding: 20px;
+}
+
+.Profile img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.Profile-Info p {
+    margin: 5px 0;
+}
+.Columna1, .Columna2{
+    grid-template-rows: 200px 200px;
+    
+}
+.Columna1{
+  row-gap: 100px;  
+}
+
+

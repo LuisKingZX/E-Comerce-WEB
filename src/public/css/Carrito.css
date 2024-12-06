@@ -1,0 +1,57 @@
+.CartContainer{
+    
+    margin-top: 120px;
+    margin-left: 400px;
+    width: 800px;
+    height: 454px;
+    position: fixed;
+}
+.GridContainer{
+    display: grid;
+    grid-template-columns: 100px 200px 100px 100px 200px 100px;
+    border: 1px solid #005c00;
+    height: 325px;
+    text-align: center;
+}
+img{
+    height: 62.5px;
+    width: 62.5px;
+}
+select,button {
+    margin-top: 8px;
+}
+
+.Articulo,.Descripcion,.PrecioUnitario,.Cantidad,.Total,.Quitar{
+    display: grid;
+    grid-auto-rows: 65px;
+    
+    border: 1px solid #005c00;
+}
+.Articulo1,.Descripcion1,.Precio,.Cantidad1,.Total1,.Quitar1{
+
+    border: 1px solid #005c00;
+}
+.GridContainerTotales{
+    
+    display: grid;
+    grid-template-columns: 100px 200px;    
+    position:absolute;
+    left: 400px;
+}
+.Columna2{
+
+    
+    text-align: center;
+}
+.Columna1{
+width: 100px;
+}
+.TotalColumna2,.TotalColumna1{
+    border: 2px solid #005c00;
+}
+.BtnComprar{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    
+}

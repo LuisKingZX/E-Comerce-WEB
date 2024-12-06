@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda en línea</title>
+    <link rel="stylesheet" href="/src\public\css\HeaderNavBarFooter.css">
+    <link rel="stylesheet" href="/src\public\css\PaginaPrincipal.css">
+
+</head>
+<body>
+    <header>
+        <div class="Logo">
+            <img width="80px" height="80px" src="/src\public\img\Logo-Oficial-CNP-2.jpg" alt="Consejo Nacional de Produccion">
+        </div>
+        <H1>Consejo Nacional De Produccion</H1>
+    </header>
+    <div class="GridContainer">
+        <div class="ContainerNav">
+            <nav>
+                <ul>
+                    <li><a href="/PerfilComprador">Perfil</a></li>
+                    <li><a href="/RegistroPago">Metodo de Pago</a></li>
+                    <li><a href="/Carrito">Carrito</a></li>
+                    <li><a href="/ConfirmaCompra"></a></li>
+                </ul>
+                <!-- Botón de Cerrar Sesión en la Barra de Navegación -->
+                <div class="Logout">
+                    <button id="btn-logout">
+                        <img src="/src\public\img\cerrar-sesion.png" alt="Cerrar sesión" width="30px" height="30px" />
+                    </button>
+                </div>
+            </nav>
+        </div>
+        <div id="productos-container"></div>
+    </div>
+    <footer>
+        <div class="GridFooter">
+            <div class="Contact-Info">
+                <h3>Contacto</h3>
+                <p>Dirección: Bv. Ernesto Rohrmoser, Rohrmoser, C. 88, San José</p>
+                <p>Teléfono: 2257 9355</p>
+                <p>Correo electrónico: contactenos@cnp.go.cr</p>
+            </div>
+            
+            <div class="Social-Links">
+                <div class="SList">
+                    <h3>Síguenos</h3>
+                    <div>
+                        <img src="/src\public\img\facebook.png" alt=""> 
+                        <a href="https://www.facebook.com/?locale=es_LA">Facebook</a>
+                        
+                    </div>
+                    
+                    <div>
+                        <img src="/src\public\img\twiter.png" alt="">
+                        <a href="https://twitter.com/?lang=es">Twitter</a>
+                        
+                    </div>
+                    
+                    <div>
+                        <img src="/src\public\img\insta.png" alt=""> 
+                        <a href="https://www.instagram.com/">Instagram</a>
+                        
+                    </div>
+                    
+                    <div>
+                        <a href="https://cr.linkedin.com/">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="CopyRight">
+                <p>&copy; 2024 Affordable Technology Solutions. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+        <script>
+            window.onload = async function () {
+                const response = await fetch('/productos');
+                const productos = await response.json();
+
+                const productosContainer = document.getElementById('productos-container');
+                productos.forEach(producto => {
+                    const productoElement = document.createElement('div');
+                    productoElement.classList.add('producto');
+
+                    // Imagen del producto
+                    const imagen = document.createElement('img');
+                    imagen.src = producto.imagenUrl; // Aquí deberías tener la URL de la imagen del producto
+                    productoElement.appendChild(imagen);
+
+                    // Nombre del producto
+                    const nombre = document.createElement('h2');
+                    nombre.textContent = producto.nombre;
+                    productoElement.appendChild(nombre);
+
+                    // Precio del producto
+                    const precio = document.createElement('p');
+                    precio.textContent = `Precio: $${producto.precio}`;
+                    productoElement.appendChild(precio);
+
+                    // Botón para añadir al carrito
+                    const btnAgregar = document.createElement('button');
+                    btnAgregar.classList.add('btn-agregar');
+                    btnAgregar.textContent = 'Añadir al carrito';
+                    btnAgregar.addEventListener('click', function () {
+                        // Aquí puedes agregar la lógica para añadir el producto al carrito
+                        console.log('Producto añadido al carrito:', producto);
+                    });
+                    productoElement.appendChild(btnAgregar);
+                    productosContainer.appendChild(productoElement);
+                });
+            }
+        </script>
+        <script src="js/CerrarSesion.js"></script>
+        <script src="js/PaginaPrincipal.js"></script>
+        <script src="/src/index.js"></script>
+</body>
+</html>

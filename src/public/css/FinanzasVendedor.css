@@ -1,0 +1,33 @@
+
+
+.GridContainer{
+    position: fixed;
+    margin-left: 300px;
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    column-gap: 50px;
+    
+}
+.Saldo{
+    position: fixed;
+    display: flex;
+    margin-left: 300px;
+    margin-top: 500px; 
+    
+}
+.SaldoTotal{
+    width: 200px;
+    margin-right: 50px;
+}
+
+.SaldoTotal1{
+    width: 200px;
+    
+}
+p{
+    font-size: 1.4rem;
+    border: 1px solid #005c00;
+    text-align: center;
+    
+}

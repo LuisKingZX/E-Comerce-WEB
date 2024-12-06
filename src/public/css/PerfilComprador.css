@@ -1,0 +1,33 @@
+.ContainerProfile {
+    position: relative;
+    text-align: center;
+    margin-left: 400px;
+}
+
+.Profile {
+    display: grid;
+    grid-template-columns: 300px 200px;
+    column-gap: 50px;
+    margin-top: 120px;
+    padding: 20px;
+}
+
+.Profile img {
+    display: block;
+    margin: 0 auto 20px; 
+    width: 300px;
+    height: 300px;
+    padding: 0px;
+    column-gap: 0;
+}
+
+.Profile-Info {
+    text-align: left;
+}
+
+.Large-Box {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    text-align: center;
+}

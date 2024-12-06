@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeriaDelAgricultorRegistro.com</title>
+    <link rel="stylesheet" href="css/LoginRegister.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/HeaderNavBarFooter.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="Logo">
+            <img width="80px" height="80px" src="img/Logo-Oficial-CNP-2.jpg" alt="Consejo Nacional de Produccion">
+
+        </div>
+        <H1>Consejo Nacional De Produccion</H1>
+    </header>
+    <div class="container-form sign-up">
+        
+        <div class="welcome-back">
+            <div class="message">
+                <h2>Bienvenido</h2>
+                <p>Si quieres registrarte como vendedor Registrese aquí</p>
+                <button class="sign-up-btn">Registrarse</button>
+            </div>
+        </div>
+
+    <form action="/Principal" method="POST" class="formulario">
+        <h2 class="create-account">Crear Cuenta De Comprador</h2>
+        
+
+        <input type="text" placeholder="Nombre" id="FirstName" name="FirstName" required>
+        <input type="text" placeholder="Primer Apellido" id="LastName" name="LastName" required>
+        <input type="text" placeholder="Segundo Apellido" id="SecondLastName" name="SecondLastName" required>
+        <input type="email" placeholder="Email" id="Email" name="Email" required>
+        <input type="password" placeholder="Contraseña" id="Password" name="Password" required>
+        <input type="password" placeholder="Confirmar Contraseña" id="Password2" name="Password2" required>
+
+
+        <select name="Id_Type" required>
+            <option value="" disabled selected>Tipo de ID</option>
+            <option value="cedula">Cédula</option>
+            <option value="dimex">DIMEX</option>
+        </select>
+        <input type="text" placeholder="ID" id="ID" name="ID" required>
+        <input type="text" placeholder="Direccion" id="Address" name="Address" required>
+        <input type="tell" placeholder="Telefono" id="Phone" name="Phone" required>
+        <label for="photo">Subir foto del Usuario:</label>
+        <input type="file" id="Photo" name="Photo" accept="image/*">
+
+
+        <div class="button"><input type="submit" value="Registrarse"></div>
+    </form>
+
+</div>
+<div class="container-form sign-in">
+    <form action="/Principal" method="POST" class="formulario">
+        <h2 class="create-account">Crear Cuenta De Vendedor</h2>
+        
+        <div class="Form-ContainerLeft">
+            <input type="text" placeholder="Nombre" id="FirstName" name="FirstName" required>
+            <input type="text" placeholder="Primer Apellido" id="LastName" name="LastName" required>
+            <input type="text" placeholder="Segundo Apellido" id="SecondLastName" name="SecondLastName" required>
+            <input type="email" placeholder="Email" id="Email" name="Email" required>
+            <input type="password" placeholder="Contraseña" id="Password" name="Password" required>
+            <input type="password" placeholder="Confirmar Contraseña" id="Password2" name="Password2" required>
+        </div>
+        <div class="Form-ContainerRight">
+            <select name="Id_Type" required>
+                <option value="" disabled selected>Tipo de ID</option>
+                <option value="cedula">Cédula</option>
+                <option value="dimex">DIMEX</option>
+            </select>
+            <input type="text" placeholder="ID" id="ID" name="ID" required>
+            <input type="text" placeholder="Direccion" id="Address" name="Address" required>
+            <input type="tell" placeholder="Telefono" id="Phone" name="Phone" required>
+            <label for="photo">Subir foto del Usuario:</label>
+            <input type="file" id="Photo" name="Photo" accept="image/*">
+    
+                <input type="text" placeholder="Nombre del Tramo" id="TramoName" name="TramoName" required>
+                <label for="file">Subir permisos municipales:</label>
+                <input type="file" id="Document" name="Document" accept=".doc,.docx,.pdf">
+    
+        </div>
+
+    <div class="button"><input type="submit" value="Registrarse"></div>
+    </form>
+    <div class="welcome-back">
+        <div class="message">
+            <h2>Bienvenido</h2>
+            <p>Si quieres registrarte como comprador Registrese aquí</p>
+            <button class="sign-in-btn">Registrarse</button>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <div class="GridFooter">
+            <div class="Contact-Info">
+                <h3>Contacto</h3>
+                <p>Dirección: Bv. Ernesto Rohrmoser, Rohrmoser, C. 88, San José</p>
+                <p>Teléfono: 2257 9355</p>
+                <p>Correo electrónico: contactenos@cnp.go.cr</p>
+            </div>
+            
+            <div class="Social-Links">
+                <div class="SList">
+                    <h3>Síguenos</h3>
+                    <div>
+                        <img src="img/facebook.png" alt=""> 
+                        <a href="https://www.facebook.com/?locale=es_LA">Facebook</a>
+                        
+                    </div>
+                    
+                    <div>
+                        <img src="img\twiter.png" alt="">
+                        <a href="https://twitter.com/?lang=es">Twitter</a>
+                        
+                    </div>
+                    
+                    <div>
+                        <img src="img/insta.png" alt=""> 
+                        <a href="https://www.instagram.com/">Instagram</a>
+                        
+                    </div>
+                    
+                    <div>
+                        <a href="https://cr.linkedin.com/">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="CopyRight">
+                <p>&copy; 2024 Affordable Technology Solutions. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+        
+        <script src="js/LoginRegister.js"></script>
+
+
+</body>
+
+</html>

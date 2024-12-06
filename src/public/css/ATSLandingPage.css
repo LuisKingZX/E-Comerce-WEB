@@ -1,0 +1,91 @@
+/* Conozcanos.css */
+
+/* Estilos generales */
+body {
+
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+}
+
+.header-logo {
+    width: 80px;
+    height: 80px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+/* Secciones */
+section {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.ContainerBody {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: auto;
+    margin-left: 120px;
+}
+
+.ContainerNav{
+    position: absolute;
+    background-color: #4195b0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 10% ;
+    padding: 0;
+}
+
+nav ul li {
+   margin-top: 10px;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff; /* Texto en color blanco */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+nav ul li a:hover {
+    color: #91ddfc; /* Color secundario */
+}
+
+
+/* Estilos para el pie de página */
+footer {
+    position: relative;
+    margin-bottom: 0;
+    background-color: #4195b0; /* Color primario */
+    color: #fff; /* Texto en color blanco */
+
+}
+
+
+.Social-Links ul li a:hover {
+    color: #006464; /* Color secundario */
+}

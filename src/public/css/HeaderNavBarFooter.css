@@ -1,0 +1,132 @@
+html{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+}
+
+header {
+    display: flex;
+    background-color: #005c00; /* Color primario */
+    color: #fff; /* Texto en color blanco */
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    padding-left: 10px;
+    top: 0; /* Fijar en la parte superior */
+    z-index: 1000; /* Asegurar que esté por encima de otros elementos */
+}
+
+header h1{
+margin-left: 30px;
+font-size: 2.2rem;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+.ContainerNav{
+    display: flex;
+    top: 0;
+    position: fixed;
+    margin-top: 105px;
+    background-color: #005c00;
+    height: 64%;
+    margin-left: 0.5%;
+    border-radius: 20px;
+    width: 100px;
+}
+
+.Logo img {
+    width: 150px; /* Ajusta el tamaño del logo según sea necesario */
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 10% ;
+    padding: 0;
+}
+
+nav ul li {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff; /* Texto en color blanco */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+nav ul li a:hover {
+    color: #b7e97e; /* Color secundario */
+}
+
+/* Estilos para el pie de página */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background-color: #005c00; /* Color primario */
+    color: #fff; /* Texto en color blanco */
+    padding: 8px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.GridFooter{
+
+    display: grid;
+    grid-template-columns: 700px 700px auto;
+    font-size: 1.3rem;
+}
+.Social-Links{
+    display: grid;
+    grid-template-columns: 100px auto;
+}
+.Social-Links img{
+    width: 30px;
+    height: 30px;
+}
+.CopyRight{
+    align-content: center;
+}
+.SList{
+    display: grid;
+    grid-template-rows: 40px 40px 40px 40px 40px;
+}
+
+.Social-Links  a {
+    color: #fff; /* Texto en color blanco */
+    text-decoration: none;
+}
+
+.Social-Links ul li a:hover {
+   color: #00b9b9; /* Color secundario */
+}
+
+.Logout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Ajusta este valor según tu diseño */
+}
+
+#btn-logout {
+    background-color: transparent; /* Puedes cambiar esto según tus necesidades */
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem; /* Ajusta el tamaño del texto */
+    color: white; /* El color del texto */
+}
+
+#btn-logout:hover {
+    color: #b7e97e; /* Cambia el color al pasar el mouse */
+}

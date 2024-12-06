@@ -1,0 +1,50 @@
+.GridContainer{
+  display: grid;
+  position: fixed;
+  margin-top: 125px;
+  margin-left: 400px;
+  width: 400px;
+  height: 400px;
+  grid-template-rows: auto auto;
+}
+
+
+
+.Selector-Tiempo {
+display: grid;
+grid-template-columns: auto auto auto auto auto;
+
+}
+
+button {
+  
+  width: 100px;
+  color: black;
+  border: none;
+  cursor: pointer;
+  margin-left: 50px;
+  background-color: #005c00;
+}
+
+.Contenedor-Grafico {
+  text-align: center;
+  margin-top: 20px;
+  width: 400px;
+}
+
+canvas {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 800px;
+  height: 350px;
+}
+
+#BotonImprimir {
+  margin-top: 10px;
+}
+
+#BotonActualizar {
+  margin-left: 100px; /* Esto centra el botón */
+  margin-right: auto; /* Esto centra el botón */
+  display: block; /* Asegura que el botón se comporte como un bloque */
+}

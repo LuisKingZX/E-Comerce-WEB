@@ -1,0 +1,19 @@
+.Container{
+    position: fixed;
+    margin-top: 120px;
+    margin-left: 200px;
+    width: 800px;
+}
+.BtnCerrar{
+    position: absolute;
+    right: 0;
+   font-size: 1.4rem;
+}
+.GridContainer{
+    display: grid;
+    grid-template-columns: 350px 350px;
+}
+.Columna2{
+    align-content: center;
+    
+}

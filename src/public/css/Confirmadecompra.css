@@ -1,0 +1,19 @@
+.ContainerConfirmacionCompra {
+    position: fixed;
+    width: 600px;
+    margin-top: 125px;
+    margin-left: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     /* Ajusta el valor del margen superior según sea necesario */
+}
+
+h1 {
+    text-align: center;
+}
+
+#DetallesDeOrden {
+    margin-top: 20px;
+}
